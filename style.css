@@ -1,0 +1,316 @@
+*{
+    max-width: 1345px;
+    margin: 0;
+    box-sizing: border-box;
+}
+#topnav{
+    z-index: 1;
+    display: inline-block;
+    margin-top: 0px;
+    height: 60px;
+    width: 150%;
+    position: sticky;
+    top: 0px;
+    background-color: rgb(253, 253, 253);
+}
+.topnavbox{
+    display: inline-block;
+    text-align: center;
+    padding: 18px 18px 10px 10px;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+.boxup{
+    height: 100%;
+}
+.boxup:hover{
+    background-color: green;
+    color: white;
+}
+.iconspace{
+    width: 50px;
+}
+#searchtop{
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid rgb(80, 78, 78);
+    border-radius: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0%;
+    text-align: center;
+    position: fixed;
+    top: 2.5px;
+    height: fit-content;
+    background-color: white;
+}
+#searchbartop{
+    overflow: hidden;
+    border: 1px solid white;
+    padding: 7px 0px 6px 7px;
+    margin-top: 7.7px ;
+    border-radius: 20px;
+    width: 200px;
+}
+#searchtop button{
+    z-index: 2;
+    background-color: white;
+    border: 1px solid transparent ;
+    border-radius: 30px;
+    padding: 13px 19px;
+    margin: auto 0px 5px;
+}
+#searchtop button:hover{
+    background-color: rgb(243, 239, 239);
+}
+.ins{
+    border: 1px solid transparent;
+    border-radius: 22px;
+    background-color: rgb(214, 250, 203);
+    width: fit-content;
+    margin-top: 6px;
+    margin-bottom: 5px;
+    float: right;
+    padding: 0;
+    z-index: 1;
+}
+.ins span{
+    display: inline-block;
+    margin-top: 0;
+    padding: 12px 13px; 
+}
+.topin{
+    border: 1px solid transparent;
+    border-radius: 21px;
+    background-color: rgb(75, 165, 75);
+    color: white;
+    z-index: 3;
+    padding: 10px 20px;
+}
+.ins:hover{
+    background-color: rgb(84, 187, 84);
+}
+.topout{
+    border: none;
+    z-index: 2;
+    padding: 10px 15px 10px 15px;
+}
+#navbar{
+    background-color: aqua;
+    overflow:hidden;
+    margin-top: 0px;
+    height: 50px;
+    width: 150%;
+    position: fixed;
+    top: 39px;
+    z-index: 0;
+}
+#navbar ul{
+    margin-top: 0;
+    background-color: rgb(36, 35, 46);
+}
+#navbar li{
+    display: inline-block;
+    margin: 0;
+    padding: 5px 10px;
+    list-style: none;
+    text-align: center;
+}
+#navbar a{
+    color: beige;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+#navbar li:hover{
+    background-color: black;
+    cursor: pointer;
+}
+#btn_srl_right{
+    display:inline;
+    z-index: 3;
+    background-color: rgb(36, 35, 46);
+    margin-top: 0px;
+    position: sticky;
+    top: 25px;
+    height: 30px;
+    color: rgb(252, 253, 253);
+    width: fit-content;
+    font-size:large;
+    margin-left: 25px;
+}
+#btn_srl_left{
+    display: inline;
+    z-index: 3;
+    background-color: rgb(36, 35, 46);
+    margin-top: 0px;
+    position: sticky;
+    top: 25px;
+    height: 30px;
+    color: rgb(252, 253, 253);
+    width: fit-content;
+    font-size: large;
+    margin-left: 15px;
+    margin-right: 25px;
+}
+#btn_srl_right:hover, #btn_srl_left:hover{
+    cursor: pointer;
+}
+/* box style*/
+.box{
+    text-align: center;
+    text-transform: capitalize;
+    height: 600px;
+    width: 100%;
+}
+.container{
+    width: 100%;   
+    margin-top: 0%;
+    display: block; 
+    height: 1300px;
+}
+.smallbox{
+    display: block;
+    width: 45%;
+    margin: 70px 20px 10px 30px;
+    float: left;
+    text-align: center;
+    height: 200px;
+    justify-items: center;
+    border-radius: 5px;
+}
+.smallbox h1, .smallbox h3, .smallbox button{
+    margin: 20px;
+    text-align: center;
+}
+.smallbox button{
+    display: block;
+    margin: 16px auto;
+    padding: 13px;
+    border-radius: 25px;
+    width: 200px;
+    border-style: none;
+    text-transform: capitalize;    
+}
+.smallbox2{
+    display: block;
+    width: 45%;
+    margin: 25px 20px 20px 30px;
+    float: left;
+    text-align: center;
+    height: 100px;
+    justify-items: center;
+    border-radius: 5px;
+}
+.smallbox2 h2{
+    margin: 40px;
+    text-align: center;
+}
+.box h1 {
+    padding: 120px 10px 30px 10px;
+    font-size: 45px;
+    color: rgb(7, 7, 7);
+}
+.box1 h1{
+    padding: 120px 10px 30px 10px;
+    font-size: 60px;
+    color: rgb(253, 253, 253);
+}
+.box h3{
+    font-size: large;
+}
+.box1 h3,.box1 a{
+    font-size: 23px;
+}
+.search{/* to align search bar and button*/
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+    height: fit-content;
+}
+#searchbar{
+    display: inline;
+    width: 400px;
+    height: 30px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 25px 15px;
+    border-radius: 30px 0 0 30px;
+    border-style: none;
+}
+#searchbar :focus{
+    border: none;
+}
+#searchbutton{
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    border-radius: 0 30px 30px 0;
+    padding:25px 15px ;
+    background-color: green;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 0px;
+}
+#searchbutton i{
+    margin: 0px;
+}
+.box a{
+    color: white;    
+    display: block;
+    margin-top: 30px;
+}
+.box button{
+    display: block;
+    margin: 16px auto;
+    padding: 13px;
+    border-radius: 25px;
+    width: 200px;
+    border-style: none;
+    text-transform: capitalize;
+}
+/* button text design*/
+.f1{
+    color: white;
+    font-weight: 1000px;
+    font-size: medium;
+}
+.f2{
+    color: black;
+    font-weight: 700;
+    font-size: medium;
+}
+.boxright{
+    float: left;
+    width: 65%;
+}
+
+/*colors*/
+.c1 {
+    background-color: rgb(36, 35, 46);
+}
+.c2 {
+    background-color: rgb(207, 224, 236);
+}
+.c3 {
+    background-color: rgb(243, 228, 141);
+}
+.c4 {
+    background-color: rgb(238, 189, 226);
+}
+.c5{
+    background-color: rgb(233, 232, 250);
+}
+.c6{
+    background-color: rgb(73, 133, 81);
+}
+.c7{
+    background-color: rgb(100, 201, 201);
+}
+
+/* border styles*/
+.third, .second{
+    border-radius: 0 20px 0 20px;
+}
+
