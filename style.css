@@ -1,14 +1,17 @@
 *{
     max-width: 1345px;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;    
+}
+html{
+    overflow-x: hidden;
 }
 #topnav{
     z-index: 1;
     display: inline-block;
     margin-top: 0px;
     height: 60px;
-    width: 150%;
+    width: 100%;
     position: sticky;
     top: 0px;
     background-color: rgb(253, 253, 253);
@@ -19,6 +22,9 @@
     padding: 18px 18px 10px 10px;
     margin-left: 10px;
     margin-top: 0px;
+}
+.smaller{
+    display: none;
 }
 .boxup{
     height: 100%;
@@ -52,7 +58,7 @@
     border-radius: 20px;
     width: 200px;
 }
-#searchtop button{
+.searchbtntop {
     z-index: 2;
     background-color: white;
     border: 1px solid transparent ;
@@ -60,7 +66,7 @@
     padding: 13px 19px;
     margin: auto 0px 5px;
 }
-#searchtop button:hover{
+.searchbtntop:hover{
     background-color: rgb(243, 239, 239);
 }
 .ins{
@@ -167,7 +173,11 @@
     width: 100%;   
     margin-top: 0%;
     display: block; 
-    height: 1300px;
+    height: 2490px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
 }
 .smallbox{
     display: block;
@@ -177,6 +187,7 @@
     text-align: center;
     height: 200px;
     justify-items: center;
+    padding: 20px ;
     border-radius: 5px;
 }
 .smallbox h1, .smallbox h3, .smallbox button{
@@ -198,13 +209,29 @@
     margin: 25px 20px 20px 30px;
     float: left;
     text-align: center;
-    height: 100px;
+    height: fit-content;
+    justify-items: center;
+    border-radius: 5px;
+}
+.smallbox3 {
+    display: block;
+    width: 20%;
+    margin: 25px 20px 20px 30px;
+    float: left;
+    text-align: center;
+    height: fit-content;
     justify-items: center;
     border-radius: 5px;
 }
 .smallbox2 h2{
     margin: 40px;
     text-align: center;
+    
+}
+.smallbox3 h2 {
+    margin: 40px;
+    text-align: center;
+
 }
 .box h1 {
     padding: 120px 10px 30px 10px;
@@ -314,3 +341,43 @@
     border-radius: 0 20px 0 20px;
 }
 
+/* for smaller screens*/
+@media only screen and (max-width: 900px) {
+    .larger{
+        display: none;
+    }
+    .smaller{
+        display: inline-block;
+    }
+    #searchtop{
+        z-index: 2;
+    }
+    .ssearch{
+        z-index: 1;
+    }
+    .ssearch:hover #searchtop{
+        display: inline-block;       
+    }
+    #navbar{
+        width: 700px;
+    }
+    .boxright{
+        float: none;
+        width: 100%;
+    }
+    .container{
+        display: flex;
+        width: 100%;
+    }
+    .smallbox{
+        width: 98%;
+        
+    }
+    .smallbox2{
+        width: 98%;
+    }
+    .smallbox3{
+        width: 35%;
+    }
+    
+}
